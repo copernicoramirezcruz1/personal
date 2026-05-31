@@ -1,0 +1,242 @@
+# Check available PDF extraction tools in .
+$ which pdftotext || which pdfinfo || pip list 2>/dev/null | grep -i pdf || python3 -c "import PyPDF2; print('PyPDF2 available')" 2>/dev/null || python3 -c "import pikepdf; print('pikepdf available')" 2>/dev/null || echo "checking other tools..."
+/usr/bin/pdftotext
+
+# Check Node.js and npm versions
+$ node --version && npm --version && which npx
+v22.20.0
+11.14.1
+/home/cramirez/.nvm/versions/node/v22.20.0/bin/npx
+
+# Scaffold Vue 3 + Vite project in .
+$ npm create vite@latest . -- --template vue 2>&1
+> npx
+> "create-vite" . --template vue
+└  Operation cancelled
+
+# Scaffold Vue 3 project in temp dir
+$ cd /tmp && rm -rf vue_temp && npx create-vite@latest vue_temp --template vue 2>&1
+│
+◇  Scaffolding project in /tmp/vue_temp...
+│
+└  Done. Now run:
+  cd vue_temp
+  npm install
+  npm run dev
+  
+  # Copy scaffolded project to working dir
+$ cp -r /tmp/vue_temp/* /tmp/vue_temp/.* /home/cramirez/proyectos_copernico/vue_03/ 2>/dev/null; ls /home/cramirez/proyectos_copernico/vue_03/
+com.google.Chrome.lNruSd
+com.google.Chrome.YjRx41
+copernico.jpeg
+copernico_min.jpg
+curriculum copernico-imprimir.pdf
+gdm3-config-err-sb8hrY
+index.html
+node-compile-cache
+opencode
+package.json
+public
+README.md
+snap-private-tmp
+src
+systemd-private-bb05a5b3fd0844f6a31b9deff6981194-colord.service-zWj2bQ
+systemd-private-bb05a5b3fd0844f6a31b9deff6981194-fwupd.service-8QUijE
+systemd-private-bb05a5b3fd0844f6a31b9deff6981194-ModemManager.service-s962r3
+systemd-private-bb05a5b3fd0844f6a31b9deff6981194-power-profiles-daemon.service-kPVyqT
+systemd-private-bb05a5b3fd0844f6a31b9deff6981194-switcheroo-control.service-jLfWdd
+systemd-private-bb05a5b3fd0844f6a31b9deff6981194-systemd-logind.service-8UHf8p
+systemd-private-bb05a5b3fd0844f6a31b9deff6981194-systemd-oomd.service-jLwC6F
+systemd-private-bb05a5b3fd0844f6a31b9deff6981194-systemd-resolved.service-6meC18
+systemd-private-bb05a5b3fd0844f6a31b9deff6981194-systemd-timesyncd.service-tNQ2gm
+systemd-private-bb05a5b3fd0844f6a31b9deff6981194-upower.service-LvBQAG
+vite.config.js
+
+# Clean up temp files from working dir in .
+$ rm -rf systemd-private-* snap-private-tmp gdm3-config-* com.google.Chrome* node-compile-cache opencode 2>/dev/null; ls -la
+total 16340
+drwxrwxr-x 10 cramirez cramirez    4096 may 27 19:38 .
+drwxrwxr-x 21 cramirez cramirez    4096 may 26 17:06 ..
+-rw-r--r--  1 cramirez cramirez 8199928 may 27 19:38 .79ffbc6e777bebf9-00000000.so
+-rw-rw-r--  1 cramirez cramirez  123399 may 27 19:24 copernico.jpeg
+-rw-rw-r--  1 cramirez cramirez   40304 may 26 17:07 copernico_min.jpg
+-rw-rw-r--  1 cramirez cramirez  110350 may 27 19:28 curriculum copernico-imprimir.pdf
+-rw-r--r--  1 cramirez cramirez 8191776 may 27 19:38 .fbffaffdf1df7f3b-00000000.so
+drwxrwxr-t  2 cramirez cramirez    4096 may 27 19:38 .font-unix
+-rw-rw-r--  1 cramirez cramirez     253 may 27 19:38 .gitignore
+drwxrwxr-t  2 cramirez cramirez    4096 may 27 19:38 .ICE-unix
+-rw-rw-r--  1 cramirez cramirez     358 may 27 19:38 index.html
+-rw-rw-r--  1 cramirez cramirez     314 may 27 19:38 package.json
+drwxrwxr-x  2 cramirez cramirez    4096 may 27 19:38 public
+-rw-rw-r--  1 cramirez cramirez     385 may 27 19:38 README.md
+drwxrwxr-x  4 cramirez cramirez    4096 may 27 19:38 src
+drwxrwxr-t  2 cramirez cramirez    4096 may 27 19:38 .Test-unix
+-rw-rw-r--  1 cramirez cramirez     155 may 27 19:38 vite.config.js
+drwxrwxr-x  2 cramirez cramirez    4096 may 27 19:38 .vscode
+drwxrwxr-t  2 cramirez cramirez    4096 may 27 19:38 .X11-unix
+drwxrwxr-t  2 cramirez cramirez    4096 may 27 19:38 .XIM-unix
+
+# Clean up remaining temp files in .
+$ rm -rf .*unix .79ffbc6e777bebf9-00000000.so .fbffaffdf1df7f3b-00000000.so .font-unix .ICE-unix .Test-unix .X11-unix .XIM-unix node-compile-cache 2>/dev/null; ls -la
+total 312
+drwxrwxr-x  5 cramirez cramirez   4096 may 27 19:38 .
+drwxrwxr-x 21 cramirez cramirez   4096 may 26 17:06 ..
+-rw-rw-r--  1 cramirez cramirez 123399 may 27 19:24 copernico.jpeg
+-rw-rw-r--  1 cramirez cramirez  40304 may 26 17:07 copernico_min.jpg
+-rw-rw-r--  1 cramirez cramirez 110350 may 27 19:28 curriculum copernico-imprimir.pdf
+-rw-rw-r--  1 cramirez cramirez    253 may 27 19:38 .gitignore
+-rw-rw-r--  1 cramirez cramirez    358 may 27 19:38 index.html
+-rw-rw-r--  1 cramirez cramirez    314 may 27 19:38 package.json
+drwxrwxr-x  2 cramirez cramirez   4096 may 27 19:38 public
+-rw-rw-r--  1 cramirez cramirez    385 may 27 19:38 README.md
+drwxrwxr-x  4 cramirez cramirez   4096 may 27 19:38 src
+-rw-rw-r--  1 cramirez cramirez    155 may 27 19:38 vite.config.js
+drwxrwxr-x  2 cramirez cramirez   4096 may 27 19:38 .vscode
+
+$ npm install && npm install -D tailwindcss @tailwindcss/vite && npm install @vueuse/core @vueuse/motion
+added 35 packages, and audited 36 packages in 11s
+9 packages are looking for funding
+  run `npm fund` for details
+found 0 vulnerabilities
+added 13 packages, and audited 49 packages in 9s
+10 packages are looking for funding
+  run `npm fund` for details
+found 0 vulnerabilities
+added 49 packages, and audited 98 packages in 5s
+19 packages are looking for funding
+  run `npm fund` for details
+found 0 vulnerabilities
+
+$ npm ls tailwindcss @tailwindcss/vite 2>/dev/null
+vue_temp@0.0.0 /home/cramirez/proyectos_copernico/vue_03
+├─┬ @tailwindcss/vite@4.3.0
+│ ├─┬ @tailwindcss/node@4.3.0
+│ │ └── tailwindcss@4.3.0 deduped
+│ └── tailwindcss@4.3.0 deduped
+└── tailwindcss@4.3.0
+
+# Create project directory structure in .
+$ mkdir -p src/data src/composables src/components/layout src/components/sections src/components/ui src/assets/images
+(no output)
+
+# Copy assets to project directories in .
+$ cp copernico.jpeg src/assets/images/ && cp copernico_min.jpg src/assets/images/ && cp "curriculum copernico-imprimir.pdf" public/cv.pdf
+(no output)
+
+$ npm run build 2>&1
+> vue_temp@0.0.0 build
+> vite build
+
+# Clean up unused scaffolded files in .
+$ rm -f src/components/HelloWorld.vue src/assets/vue.svg public/favicon.svg 2>/dev/null && ls src/components/ src/assets/
+src/assets/:
+hero.png
+images
+vite.svg
+src/components/:
+layout
+sections
+ui
+
+# Remove remaining scaffolded assets in .
+$ rm -f src/assets/hero.png src/assets/vite.svg && ls src/assets/
+images
+
+# Final build verification in .
+$ npm run build 2>&1
+> copernico-portfolio@0.0.0 build
+> vite build
+
+# Check if Vercel CLI is installed
+$ which vercel 2>/dev/null || echo "vercel CLI not installed"
+
+# Install Vercel CLI globally in .
+$ npm i -g vercel 2>&1
+npm warn deprecated tar@7.5.7: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+added 308 packages in 44s
+37 packages are looking for funding
+  run `npm fund` for details
+  
+  $ npm run build 2>&1
+> copernico-portfolio@0.0.0 build
+> vite build
+vite v8.0.14 building client environment for production...
+
+# Deploy to Vercel production in .
+$ vercel --prod --yes 2>&1
+> NOTE: The Vercel CLI now collects telemetry regarding usage of the CLI.
+> This information is used to shape the CLI roadmap and prioritize features.
+> You can learn more, including how to opt-out if you'd not like to participate in this program, by visiting the following URL:
+> https://vercel.com/docs/cli/about-telemetry
+  Set up "~/proyectos_copernico/vue_03"
+Loading user…
+Error: The specified token is not valid. Use `vercel login` to generate a new token.
+
+vercel --prod
+  Set up "~/proyectos_copernico/vue_03"
+? Which team? Copernico Ramirez Cruz's projects
+? Link to existing project? no
+? Name? vue-03
+  Detected Vite (Build Command: vite build, Output Directory: dist)
+? Customize settings? no
+? Do you want to change additional project settings? no
+  Linked      copernico-ramirez-cruz-s-projects/vue-03
+Error: Header at index 1 has invalid `source` pattern "/(.*\.(jpg|jpeg|png|svg|ico|webp))$".
+Learn More: https://vercel.link/invalid-route-source-pattern 
+
+# Deploy to Vercel production in .
+$ vercel --prod --yes 2>&1
+Retrieving project…
+Deploying copernico-ramirez-cruz-s-projects/vue-03
+Uploading [--------------------] (0.0B/1.1MB)
+Uploading [=====---------------] (290.5KB/1.1MB)
+Uploading [==========----------] (567.7KB/1.1MB)
+Uploading [===============-----] (852.7KB/1.1MB)
+Uploading [====================] (1.1MB/1.1MB)
+  Inspect     https://vercel.com/copernico-ramirez-cruz-s-projects/vue-03/FW9BWDeekvqiyDVS3a37gzNeyGs7
+▲ Production  https://vue-03-hg2bkypz0-copernico-ramirez-cruz-s-projects.vercel.app
+https://vue-03-hg2bkypz0-copernico-ramirez-cruz-s-projects.vercel.appBuilding…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 47 deployment files...
+Running "vercel build"
+Vercel CLI 54.4.1
+Installing dependencies...
+added 103 packages in 3s
+19 packages are looking for funding
+run `npm fund` for details
+Running "npm run build"
+> copernico-portfolio@0.0.0 build
+> vite build
+vite v8.0.14 building client environment for production...
+▲ Production  https://vue-03-hg2bkypz0-copernico-ramirez-cruz-s-projects.vercel.app
+Completing…
+▲ Aliased     https://vue-03-three.vercel.app
+✓ Ready in 13s
+
+# Check image locations in .
+$ ls src/assets/images/ && ls public/
+copernico_01.jpeg
+copernico.jpeg
+copernico_min.jpg
+cv.pdf
+favicon.svg
+icons.svg
+
+# Copy images to public directory in .
+$ cp src/assets/images/copernico.jpeg public/ && cp src/assets/images/copernico_min.jpg public/ && cp src/assets/images/copernico_01.jpeg public/
+(no output)
+
+$ npm run build 2>&1 && vercel --prod --yes 2>&1
+> copernico-portfolio@0.0.0 build
+> vite build
+vite v8.0.14 building client environment for production...
+transforming...✓ 31 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   1.93 kB │ gzip:  0.87 kB
+dist/assets/index-BQUwW40t.css   44.78 kB │ gzip:  7.79 kB
+dist/assets/index-B1NOCJzj.js   120.39 kB │ gzip: 40.54 kB

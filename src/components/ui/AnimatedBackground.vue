@@ -15,7 +15,7 @@ const particles = Array.from({ length: 50 }, (_, i) => ({
     <div
       v-for="p in particles"
       :key="p.id"
-      class="absolute rounded-full bg-blue-500 animate-float"
+      class="absolute rounded-full bg-amber-500 animate-float shadow-[0_0_10px_rgba(245,158,11,0.5)]"
       :style="{
         left: `${p.x}%`,
         top: `${p.y}%`,

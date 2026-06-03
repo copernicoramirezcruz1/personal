@@ -37,8 +37,8 @@ function closeMenu() {
     <div class="max-w-6xl mx-auto px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 md:h-20">
         <button @click="scrollTo('hero')" class="flex items-center gap-2 group">
-          <span class="text-lg md:text-xl font-bold text-white group-hover:text-blue-400 transition-colors duration-300">
-            Copérnico<span class="text-blue-500">.</span>
+          <span class="text-lg md:text-xl font-bold text-white group-hover:text-amber-400 transition-colors duration-300">
+            Copérnico<span class="text-amber-500">.</span>
           </span>
         </button>
 

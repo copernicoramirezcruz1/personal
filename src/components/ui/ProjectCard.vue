@@ -17,11 +17,11 @@ defineProps({
     :style="{ transitionDelay: `${index * 100}ms` }"
     :class="{ 'md:col-span-2': featured }"
   >
-    <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-violet-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+    <div class="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
     <div class="relative p-6 md:p-8">
       <div class="flex items-start justify-between mb-4">
-        <h3 class="text-xl md:text-2xl font-semibold text-white group-hover:text-blue-300 transition-colors duration-300">
+        <h3 class="text-xl md:text-2xl font-semibold text-white group-hover:text-amber-300 transition-colors duration-300">
           {{ title }}
         </h3>
         <span v-if="featured" class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
@@ -35,7 +35,7 @@ defineProps({
 
       <div v-if="features.length" class="mb-5 space-y-1.5">
         <div v-for="(feature, i) in features" :key="i" class="flex items-center gap-2 text-sm text-zinc-500">
-          <span class="w-1 h-1 rounded-full bg-blue-500 flex-shrink-0" />
+          <span class="w-1 h-1 rounded-full bg-amber-500 flex-shrink-0" />
           {{ feature }}
         </div>
       </div>

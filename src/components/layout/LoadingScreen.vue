@@ -23,8 +23,8 @@ onMounted(() => {
     >
       <div class="flex flex-col items-center gap-6">
         <div class="relative">
-          <div class="w-16 h-16 rounded-full border-2 border-blue-500/30 border-t-blue-500 animate-spin" />
-          <div class="absolute inset-0 w-16 h-16 rounded-full border-2 border-violet-500/20 border-b-violet-500 animate-spin" style="animation-direction: reverse; animation-duration: 1.5s;" />
+          <div class="w-16 h-16 rounded-full border-2 border-amber-500/30 border-t-amber-500 animate-spin" />
+          <div class="absolute inset-0 w-16 h-16 rounded-full border-2 border-orange-500/20 border-b-orange-500 animate-spin" style="animation-direction: reverse; animation-duration: 1.5s;" />
         </div>
         <p class="text-sm text-zinc-500 font-mono tracking-widest uppercase animate-pulse">
           Cargando

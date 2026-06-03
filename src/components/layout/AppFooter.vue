@@ -8,7 +8,7 @@ import { personal } from '@/data/cv'
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
         <div class="flex flex-col items-center md:items-start gap-2">
           <span class="text-lg font-bold text-white">
-            Copérnico<span class="text-blue-500">.</span>
+            Copérnico<span class="text-amber-500">.</span>
           </span>
           <p class="text-sm text-zinc-500 max-w-md text-center md:text-left">
             {{ personal.tagline }}

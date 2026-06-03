@@ -13,20 +13,20 @@ defineProps({
 
 <template>
   <div class="relative pl-8 md:pl-12 pb-12 md:pb-16 reveal" :style="{ transitionDelay: `${index * 100}ms` }">
-    <div class="absolute left-0 top-1 w-px h-full bg-gradient-to-b from-blue-500/50 via-zinc-700 to-transparent" :class="{ 'h-8': isLast }" />
+    <div class="absolute left-0 top-1 w-px h-full bg-gradient-to-b from-amber-500/50 via-zinc-700 to-transparent" :class="{ 'h-8': isLast }" />
 
-    <div class="absolute left-[-4px] top-1 w-2.5 h-2.5 rounded-full bg-blue-500 shadow-lg shadow-blue-500/50 ring-4 ring-zinc-950" />
+    <div class="absolute left-[-4px] top-1 w-2.5 h-2.5 rounded-full bg-amber-500 shadow-lg shadow-amber-500/50 ring-4 ring-zinc-950" />
 
     <div class="group p-5 md:p-6 rounded-2xl glass-light card-hover cursor-default">
-      <span class="inline-block text-xs font-mono text-blue-400 bg-blue-500/10 px-3 py-1 rounded-full mb-3">
+      <span class="inline-block text-xs font-mono text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full mb-3">
         {{ period }}
       </span>
 
-      <h3 class="text-lg md:text-xl font-semibold text-white mb-1 group-hover:text-blue-300 transition-colors duration-300">
+      <h3 class="text-lg md:text-xl font-semibold text-white mb-1 group-hover:text-amber-300 transition-colors duration-300">
         {{ role }}
       </h3>
 
-      <p class="text-sm md:text-base text-blue-400/80 mb-3 font-medium">
+      <p class="text-sm md:text-base text-amber-400/80 mb-3 font-medium">
         {{ company }}
       </p>
 
@@ -36,7 +36,7 @@ defineProps({
 
       <ul v-if="achievements.length" class="space-y-2 mb-4">
         <li v-for="(achievement, i) in achievements" :key="i" class="flex items-start gap-2 text-sm text-zinc-400">
-          <span class="text-blue-400 mt-0.5 flex-shrink-0">&#11208;</span>
+          <span class="text-amber-400 mt-0.5 flex-shrink-0">&#11208;</span>
           {{ achievement }}
         </li>
       </ul>

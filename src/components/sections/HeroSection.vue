@@ -54,8 +54,8 @@ function scrollTo(id) {
 
     <div class="absolute inset-0 grid-pattern opacity-30" />
 
-    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-[128px] animate-pulse-glow" />
-    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-500/20 rounded-full blur-[128px] animate-pulse-glow" style="animation-delay: 1.5s;" />
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-amber-500/20 rounded-full blur-[128px] animate-pulse-glow" />
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orange-500/20 rounded-full blur-[128px] animate-pulse-glow" style="animation-delay: 1.5s;" />
 
     <div class="relative z-10 max-w-6xl mx-auto px-6 lg:px-8 py-32 text-center">
       <div class="mb-8 md:mb-10 inline-block">
@@ -75,7 +75,7 @@ function scrollTo(id) {
       </div>
 
       <div class="space-y-1 mb-4">
-        <p class="text-xs md:text-sm font-mono tracking-[0.3em] text-blue-400 uppercase animate-fade-in">
+        <p class="text-xs md:text-sm font-mono tracking-[0.3em] text-amber-400 uppercase animate-fade-in">
           Hola, soy
         </p>
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight">
@@ -87,7 +87,7 @@ function scrollTo(id) {
       <div class="h-8 md:h-10 mb-6">
         <p class="text-lg md:text-xl lg:text-2xl text-zinc-400 font-light">
           <span>{{ typedText }}</span>
-          <span class="inline-block w-0.5 h-5 md:h-6 bg-blue-500 ml-1 animate-pulse align-middle" />
+          <span class="inline-block w-0.5 h-5 md:h-6 bg-amber-500 ml-1 animate-pulse align-middle" />
         </p>
       </div>
 
